@@ -1,0 +1,33 @@
+### Find All Accounts
+GET http://localhost:8080/api/accounts
+
+### Find Account by ID
+GET http://localhost:8080/api/accounts/1
+
+### Create New Account
+POST http://localhost:8080/api/accounts
+Content-Type: application/json
+
+{
+  "accountHolderName": "Erkin",
+  "balance": 12500.0
+}
+
+### Deposit Money
+PUT http://localhost:8080/api/accounts/1/deposit
+Content-Type: application/json
+
+{
+  "amount": 25000
+}
+
+### Withdraw Money
+PUT http://localhost:8080/api/accounts/1/withdraw
+Content-Type: application/json
+
+{
+  "amount": 1250
+}
+
+### Delete Account by ID
+DELETE http://localhost:8080/api/accounts/1
